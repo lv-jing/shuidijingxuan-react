@@ -1,0 +1,74 @@
+.log {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-bottom: 0.01rem solid #ddd;
+  background: #f3f3f3;
+  position: relative;
+  text-align: center; }
+  .log i {
+    float: left;
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #333333;
+    margin-left: 0.2rem; }
+
+.msg-wrap {
+  min-height: 0.31rem;
+  height: auto !important;
+  height: 0.31rem;
+  margin: 0.02rem 0 0.05rem;
+  width: 100%; }
+
+.msg-error {
+  position: relative;
+  background: #ffebeb;
+  color: #e4393c;
+  border: 0.01rem solid #faccc6;
+  padding: 0.03rem 0.1rem 0.03rem 0.4rem;
+  line-height: 0.18rem;
+  min-height: 0.18rem;
+  font-size: 0.12rem; }
+
+.log-box {
+  width: 90%;
+  margin: auto;
+  padding: 0.2rem 0 !important; }
+
+.from {
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0.2rem 0; }
+  .from input {
+    line-height: 0.38rem;
+    height: 0.38rem;
+    border: 0;
+    padding: 0 0 0 0.5rem;
+    width: 2.54rem;
+    float: none;
+    overflow: hidden;
+    font-size: 0.14rem;
+    border-radius: 0.05rem;
+    color: #333;
+    border: 0;
+    outline: none; }
+
+button {
+  width: 100%;
+  line-height: 0.4rem;
+  color: #fff;
+  font-size: 0.2rem;
+  outline: none;
+  border: 0;
+  background: #ec9b6d;
+  border-radius: 0.06rem;
+  line-height: 0.46rem;
+  margin-top: 0.40rem; }
+
+.regist p {
+  text-align: center;
+  color: #999;
+  font-size: 0.16rem; }
+  .regist p span {
+    margin: 0 0.1rem; }
+
+.regist span {
+  color: #999; }

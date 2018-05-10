@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid #e3e3e3;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 33;
+  background: #fff; }
+  .footer .list li {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    height: 0.55rem; }
+    .footer .list li a i {
+      margin-top: 0.05rem;
+      width: 0.22rem;
+      height: 0.22rem; }
+    .footer .list li a h3 {
+      font-size: 0.13rem;
+      color: #888;
+      line-height: 0.26rem;
+      font-weight: 400; }
+
+.active i {
+  color: #EC9B6D; }
+
+.active h3 {
+  color: #EC9B6D; }

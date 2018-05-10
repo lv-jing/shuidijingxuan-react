@@ -1,0 +1,59 @@
+#Register{
+.log{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 0.01rem solid #ddd;
+    background: #f3f3f3;
+    position: relative;
+    text-align: center;
+}
+}
+.froms
+{
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0.2rem 0;
+    input{
+        line-height: 0.38rem;
+        height: 0.38rem;
+        border: 0;
+        padding: 0 0 0 0.5rem;
+        width: 2.54rem;
+        float: none;
+        overflow: hidden;
+        font-size: 0.14rem;
+        border-radius: 0.05rem;
+        color: #333;
+        border: 0;
+        outline: none;
+    }
+}
+button{
+        width: 100%;
+        line-height: 0.4rem;
+        color: #fff;
+        font-size: 0.2rem;
+        outline: none;
+        border: 0;
+        background: #ec9b6d;
+        border-radius: 0.06rem;
+        line-height: 0.46rem;
+        margin-top: 0.40rem;
+    }
+.regist{
+    p{
+        text-align: center;
+        color: #999;
+        font-size: 0.16rem;
+        span{
+            margin: 0 0.1rem;
+        }
+    }
+    span{
+         color: #999;
+    }
+}
+.yzm{
+    position: absolute;
+    right: 0.3rem;
+    font-size: 0.25rem;
+}

@@ -1,0 +1,280 @@
+.h1{
+	text-align:center;
+	margin-top:70%;
+}
+.cartlink{
+	margin-left:40%;
+	text-decoration:underline;
+}
+header.fixed {
+    position: fixed;
+    background: rgba(248,248,248,0.95);
+    z-index: 10;
+    border-bottom: 1px solid #e3e3e3;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height:0.43rem;
+    .header-wrap {
+	    display: block;
+	    text-align: center;
+	    h1{
+	    	font-size:0.18rem;
+	    	font-weight:100;
+	    	line-height: 0.43rem;
+	    }
+	    .header-l {
+		    display: block;
+		    width: 0.43rem;
+		    height: 0.43rem;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    a {
+			    position: relative;
+			    z-index: 1;
+			    display: inline-block;
+			    width: 0.23rem;
+			    height: 0.23rem;
+			    padding: 0.1rem;
+			    .back {
+				    width: 85%;
+				    height: 85%;
+				    margin: 10%;
+				    background-image: url(../../images/back.png);
+				    background-position: 50% 50%;
+				    background-repeat: no-repeat;
+				    background-size: 100%;
+				    opacity: 0.75;
+				    display: block;
+				}
+			}
+		}
+		.JS-header-edit {
+		    position: absolute;
+		    z-index: 1;
+		    top: 0;
+		    right: 0.5rem;
+		    text-align: right;
+		    line-height: 0.43rem;
+		    font-size: 0.15rem;
+		}
+		.header-r {
+		    position: absolute;
+		    z-index: 1;
+		    top: 0;
+		    right: 0;
+		    font-size: 0;
+		    text-align: right;
+		    .more {
+			    background-image: url(../../images/more.png);
+			    background-repeat: no-repeat;
+			    background-position: 50% 50%;
+			    background-size: 50%;
+			    opacity: 0.65;
+			    width:0.43rem;
+			    height:0.43rem;
+			    display: block;
+			}
+		}
+	}
+
+}
+.delete{
+	font-size:0.15rem;
+	background:#ec9b6d;
+	padding:0.03rem
+}
+.nctouch-main-layout {
+    display: inline-block;
+    width: 100%;
+    margin-top:0.53rem;
+    .mb50 {
+	    margin-bottom: 1.1rem;
+	    .nctouch-cart-container {
+		    display: block;
+		    clear: both;
+		    background-color: #FFF;
+		    margin-bottom: 0.11rem;
+		    border: solid #EEE;
+		    border-width: 0.01rem;
+		    .nctouch-cart-item {
+			    background-color: #FFF;
+			    li{
+			    	display: block;
+    				position: relative;
+    				.buy-li {
+					    padding: 0.1rem 0 0.1rem 0.1rem;
+					    .goods-check {
+						    display: inline-block;
+						    vertical-align: top;
+						    margin-top: 0.18rem;
+						    input[type="checkbox"]{
+							    position: relative;
+							    width: 0.2rem;
+							    height: 0.2rem;
+							    border: 0.05rem solid #CCC;
+							    vertical-align: middle;
+							}
+						}
+						.goods-pic {
+						    display: inline-block;
+						    width: 0.6rem;
+						    height: 0.6rem;
+						    padding: 0.04rem;
+						    border-radius: 0.2rem;
+						    img{
+						    	width:0.6rem;
+						    	height:0.6rem
+						    }
+						}
+						.goods-info {
+						    display: inline-block;
+						    vertical-align: top;
+						    font-size: 0;
+						    height: 0.48rem;
+						    margin-top: 0.04rem;
+						    width: 70%;
+						    position: relative;
+						    z-index: 1;
+						    .goods-name {
+							    display: block;
+							    a {
+								    display: block;
+								    font-size: 0.14rem;
+								    color: #666;
+								    text-decoration:none;
+								    line-height: 0.14rem;
+								    overflow: hidden;
+								}
+							}
+							.goods-type {
+							    overflow: hidden;
+							    white-space: nowrap;
+							    width: 70%;
+							    height: 0.2rem;
+							    font-size: 0.15rem;
+							    line-height: 0.3rem;
+							    color: #999;
+							    text-overflow: ellipsis;
+							    margin-top: 0.04rem;
+							}
+							.goods-price {
+							    color: #d22147;
+							    font-size: 0.13rem;
+							    font-weight: 600;
+							    em{
+							    	font-style: normal;
+							    }
+							}
+							.fr {
+							    float: right;
+							    font-size:0.12rem;
+							}
+						}
+						.edit-area {
+							background:#fff;
+						    position: absolute;
+						    right: 0;
+						    top: 0.51rem;
+						    width: 50%;
+						    height: 50%;
+						    z-index:1;
+						    .goods-subtotal {
+							    display: inline-block;
+							    font-size: 0.15rem;
+							    position: relative;
+							    z-index: 1;
+							    width: 79%;
+							    .value-box {
+								    display: inline-block;
+								    float: right;
+								    font-size: 0;
+								    border-radius: 0.2rem;
+								    width: 100%;
+								    .minus a{
+								    	background-image: url(../../images/value_minus.png);
+								    }
+								    .add a{
+								    	background-image: url(../../images/value_add.png);
+								    }
+								    .buy-num{
+								    	width:100%!important;
+								    }
+								    span{
+								    	width: 25%;
+									    background: #fff !important;
+									    text-align: center;
+									    height: 0.3rem;
+									    display: inline-block;
+									    vertical-align: top;
+									    line-height: 0;
+									    a {
+										    display: inline-block;
+										    width: 0.11rem;
+										    height: 0.12rem;
+										    background-repeat: no-repeat;
+										    background-size: 100%;
+										    margin: 0.08rem;
+    										opacity: 0.65;
+										}
+										.buy-num {
+										    width: 33.3%;
+										    background: #fff !important;
+										    text-align: center;
+										    height: 0.31rem;
+										    font-size: 0.15rem;
+										    text-align: center;
+										    border: solid #fff;
+										    background: #f5f5f5;
+										}
+								    }
+								}
+							}
+						    .goods-del {
+							    display: inline-block;
+							    float: right;
+							    height: 100%;
+							    width: 0.5rem;
+							    text-align: center;
+							    color: #fff;
+							    font-size: 0.15rem;
+							    background: #ec9b6d;
+							    line-height: 0.65rem;
+							}
+
+						}
+					}
+			    }
+			}
+		}
+		.nctouch-cart-bottom{
+			position:fixed;
+			bottom:0.53rem;
+			height:0.44rem;
+			left:0;
+			line-height:0.44rem;
+			background:#fff;
+			width:100%;
+			font-size: 0.14rem;
+			border-top:1px solid #cecece;
+			.checkall{
+				margin-left:0.1rem;
+			}
+			.totalprice{
+				margin-left:0.5rem;
+				.price{
+					color:#d22147;
+				}
+			}
+			.payment{
+				background:#bbb;
+				float:right;
+				color:#fff;
+				font-size: 0.15rem;
+				padding:0 2.5%;
+			}
+		}
+	}
+}

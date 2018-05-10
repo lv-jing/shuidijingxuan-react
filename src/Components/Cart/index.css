@@ -1,0 +1,238 @@
+.h1 {
+  text-align: center;
+  margin-top: 70%; }
+
+.cartlink {
+  margin-left: 40%;
+  text-decoration: underline; }
+
+header.fixed {
+  position: fixed;
+  background: rgba(248, 248, 248, 0.95);
+  z-index: 10;
+  border-bottom: 1px solid #e3e3e3;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 0.43rem; }
+  header.fixed .header-wrap {
+    display: block;
+    text-align: center; }
+    header.fixed .header-wrap h1 {
+      font-size: 0.18rem;
+      font-weight: 100;
+      line-height: 0.43rem; }
+    header.fixed .header-wrap .header-l {
+      display: block;
+      width: 0.43rem;
+      height: 0.43rem;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      header.fixed .header-wrap .header-l a {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        width: 0.23rem;
+        height: 0.23rem;
+        padding: 0.1rem; }
+        header.fixed .header-wrap .header-l a .back {
+          width: 85%;
+          height: 85%;
+          margin: 10%;
+          background-image: url(../../images/back.png);
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          opacity: 0.75;
+          display: block; }
+    header.fixed .header-wrap .JS-header-edit {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0.5rem;
+      text-align: right;
+      line-height: 0.43rem;
+      font-size: 0.15rem; }
+    header.fixed .header-wrap .header-r {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      font-size: 0;
+      text-align: right; }
+      header.fixed .header-wrap .header-r .more {
+        background-image: url(../../images/more.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 50%;
+        opacity: 0.65;
+        width: 0.43rem;
+        height: 0.43rem;
+        display: block; }
+
+.delete {
+  font-size: 0.15rem;
+  background: #ec9b6d;
+  padding: 0.03rem; }
+
+.nctouch-main-layout {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.53rem; }
+  .nctouch-main-layout .mb50 {
+    margin-bottom: 1.1rem; }
+    .nctouch-main-layout .mb50 .nctouch-cart-container {
+      display: block;
+      clear: both;
+      background-color: #FFF;
+      margin-bottom: 0.11rem;
+      border: solid #EEE;
+      border-width: 0.01rem; }
+      .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item {
+        background-color: #FFF; }
+        .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li {
+          display: block;
+          position: relative; }
+          .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li {
+            padding: 0.1rem 0 0.1rem 0.1rem; }
+            .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-check {
+              display: inline-block;
+              vertical-align: top;
+              margin-top: 0.18rem; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-check input[type="checkbox"] {
+                position: relative;
+                width: 0.2rem;
+                height: 0.2rem;
+                border: 0.05rem solid #CCC;
+                vertical-align: middle; }
+            .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-pic {
+              display: inline-block;
+              width: 0.6rem;
+              height: 0.6rem;
+              padding: 0.04rem;
+              border-radius: 0.2rem; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-pic img {
+                width: 0.6rem;
+                height: 0.6rem; }
+            .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-info {
+              display: inline-block;
+              vertical-align: top;
+              font-size: 0;
+              height: 0.48rem;
+              margin-top: 0.04rem;
+              width: 70%;
+              position: relative;
+              z-index: 1; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-info .goods-name {
+                display: block; }
+                .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-info .goods-name a {
+                  display: block;
+                  font-size: 0.14rem;
+                  color: #666;
+                  text-decoration: none;
+                  line-height: 0.14rem;
+                  overflow: hidden; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-info .goods-type {
+                overflow: hidden;
+                white-space: nowrap;
+                width: 70%;
+                height: 0.2rem;
+                font-size: 0.15rem;
+                line-height: 0.3rem;
+                color: #999;
+                text-overflow: ellipsis;
+                margin-top: 0.04rem; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-info .goods-price {
+                color: #d22147;
+                font-size: 0.13rem;
+                font-weight: 600; }
+                .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-info .goods-price em {
+                  font-style: normal; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .goods-info .fr {
+                float: right;
+                font-size: 0.12rem; }
+            .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area {
+              background: #fff;
+              position: absolute;
+              right: 0;
+              top: 0.51rem;
+              width: 50%;
+              height: 50%;
+              z-index: 1; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal {
+                display: inline-block;
+                font-size: 0.15rem;
+                position: relative;
+                z-index: 1;
+                width: 79%; }
+                .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal .value-box {
+                  display: inline-block;
+                  float: right;
+                  font-size: 0;
+                  border-radius: 0.2rem;
+                  width: 100%; }
+                  .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal .value-box .minus a {
+                    background-image: url(../../images/value_minus.png); }
+                  .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal .value-box .add a {
+                    background-image: url(../../images/value_add.png); }
+                  .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal .value-box .buy-num {
+                    width: 100% !important; }
+                  .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal .value-box span {
+                    width: 25%;
+                    background: #fff !important;
+                    text-align: center;
+                    height: 0.3rem;
+                    display: inline-block;
+                    vertical-align: top;
+                    line-height: 0; }
+                    .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal .value-box span a {
+                      display: inline-block;
+                      width: 0.11rem;
+                      height: 0.12rem;
+                      background-repeat: no-repeat;
+                      background-size: 100%;
+                      margin: 0.08rem;
+                      opacity: 0.65; }
+                    .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-subtotal .value-box span .buy-num {
+                      width: 33.3%;
+                      background: #fff !important;
+                      text-align: center;
+                      height: 0.31rem;
+                      font-size: 0.15rem;
+                      text-align: center;
+                      border: solid #fff;
+                      background: #f5f5f5; }
+              .nctouch-main-layout .mb50 .nctouch-cart-container .nctouch-cart-item li .buy-li .edit-area .goods-del {
+                display: inline-block;
+                float: right;
+                height: 100%;
+                width: 0.5rem;
+                text-align: center;
+                color: #fff;
+                font-size: 0.15rem;
+                background: #ec9b6d;
+                line-height: 0.65rem; }
+    .nctouch-main-layout .mb50 .nctouch-cart-bottom {
+      position: fixed;
+      bottom: 0.53rem;
+      height: 0.44rem;
+      left: 0;
+      line-height: 0.44rem;
+      background: #fff;
+      width: 100%;
+      font-size: 0.14rem;
+      border-top: 1px solid #cecece; }
+      .nctouch-main-layout .mb50 .nctouch-cart-bottom .checkall {
+        margin-left: 0.1rem; }
+      .nctouch-main-layout .mb50 .nctouch-cart-bottom .totalprice {
+        margin-left: 0.5rem; }
+        .nctouch-main-layout .mb50 .nctouch-cart-bottom .totalprice .price {
+          color: #d22147; }
+      .nctouch-main-layout .mb50 .nctouch-cart-bottom .payment {
+        background: #bbb;
+        float: right;
+        color: #fff;
+        font-size: 0.15rem;
+        padding: 0 2.5%; }

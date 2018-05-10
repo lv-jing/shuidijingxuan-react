@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.rights a {
+  font-size: 0.15rem;
+  color: #333333;
+  margin: 0 0.1rem; }
+
+header {
+  background: #fff;
+  height: 0.43rem;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  border-bottom: solid 1px #EEE;
+  width: 100%;
+  padding: 0.05rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  header .back {
+    width: 0.43rem;
+    height: 0.43rem; }
+    header .back a {
+      width: 0.43rem;
+      height: 0.43rem;
+      display: block;
+      position: relative; }
+      header .back a i {
+        font-weight: 600;
+        font-size: 0.3rem;
+        position: absolute;
+        top: 0.05rem;
+        color: #333333; }
+  header .search {
+    float: left;
+    width: 2.76rem;
+    height: 0.29rem;
+    background-color: #f6f6f6;
+    border: solid 1px #DEDEDE;
+    background-color: #f6f6f6;
+    border-radius: 0.2rem;
+    position: relative;
+    line-height: 0.29rem; }
+    header .search i {
+      margin-left: 0.05rem;
+      color: #BBB;
+      position: absolute;
+      top: 0;
+      left: 0.15rem; }
+    header .search #search-inpt {
+      height: 0.29rem;
+      float: right;
+      width: 2.5rem;
+      border-radius: 0.2rem;
+      border: 0;
+      outline: none;
+      background: #f6f6f6;
+      font-size: 0.15rem;
+      text-indent: 0.23rem; }
+  header .right {
+    width: 0.43rem;
+    height: 0.43rem;
+    position: relative; }
+    header .right a {
+      width: 0.43rem;
+      height: 0.43rem;
+      display: inline-block; }
+      header .right a i {
+        width: 0.21rem;
+        height: 0.21rem;
+        position: absolute;
+        top: 0.12rem;
+        left: 0.1rem;
+        background: url(../../images/bbc-bg48.png) no-repeat center;
+        background-size: 100%;
+        display: inline-block; }

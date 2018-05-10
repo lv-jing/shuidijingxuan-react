@@ -1,0 +1,100 @@
+*{
+ margin:0;
+ padding: 0;   
+}
+.cont{
+    margin-top: 0.54rem;
+    .left{
+       
+        height:100%;
+        
+        .list {
+            position: absolute;
+            width: 0.64rem;
+            padding: 0 0.1rem;
+            background: #F5F5F5;
+            text-align: center;
+        
+            li {
+                width: 0.62rem;
+                height: 0.63rem;
+                text-align: center;
+                font-size: 0.14rem;
+                color: #9C9C9C;
+                box-sizing: border-box;
+                i {
+                    display: block;
+                    padding: 0.1rem 0 0.05rem 0;
+                }
+            }
+        } 
+    }
+   
+   .rig{
+    width:2.92rem;
+    height: 5rem;
+    position: absolute;
+    right:0;
+    top: 0.54rem;
+    dl{
+        dt{
+            background-color: #FCFCFC;
+            border:solid 1px #F5F5F5;
+            
+            a{
+                display: block;
+                width: 96%;
+                height: 0.33rem;
+                line-height: 0.33rem;
+                padding: 0 0 0 4%;
+                color: #373737;
+                font-size: 0.14rem;
+                span{
+                    width: 0.1rem;
+                    height: 0.1rem;
+                    vertical-align: middle;
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin-right: 0.1rem;
+                    background-color: #ec9b6d;
+                }
+                i{
+                    font-size: 0.2rem;
+                    font-weight: 600;
+                    float:right;
+                    margin-right: 0.05rem;
+                }
+            }
+        }
+        dd{
+            vertical-align: top;
+            display: inline-block;
+            width:0.74rem;
+            height: 0.33rem;
+            padding: 0.05rem;
+            line-height: 0.42rem;
+            margin-left: 0.1rem;
+            a{
+                display: block;
+                color: #444;
+                white-space: nowrap;
+                font-size: 0.12rem;
+            }
+        }
+       
+    }
+     dl:last-of-type{
+         padding-bottom: 0.5rem;
+     }
+}
+}
+
+.sty{
+    color:#ECA176 !important;
+    border-bottom: 2px solid #ECA176;
+   i{
+       color:#ED5E6D
+   }
+}
+
+

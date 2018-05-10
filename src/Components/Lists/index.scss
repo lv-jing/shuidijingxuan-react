@@ -1,0 +1,107 @@
+.headd{
+    margin-top: 1rem;
+}
+.head{
+    width:100%;
+    height:0.43rem;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    font-size: 0.16rem;
+    background: rgba(255,255,255,0.95);
+    border-bottom: solid 1px #EEE;
+    line-height: 0.43rem;
+    top: 0.5rem;
+    left: 0;
+    
+    li{
+        a{
+            color: #888;
+        }
+    }
+    #one{
+        i{
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 0.05rem;
+            border-width: 0.05rem;
+            border-color: #AAA transparent transparent transparent;
+            border-style: solid dashed dashed dashed;
+        }
+    }
+}
+.act{
+    color:#ec9b6d;
+}
+
+.content{
+    background: #F5F5F5;
+    margin-top: 0.44rem;
+    ul{
+        width:100%;
+        li{
+            height: 1.18rem;
+            width:100%;
+            overflow: hidden;
+            background: #fff;
+            padding-bottom: 0.1rem;
+            .left{
+                width:0.9rem;
+                float:left;
+                height:1.18rem;
+                padding:0.1rem;
+                img{
+                    width:0.88rem;
+                }
+            }
+            .right{
+                width:2.36rem;
+                height: 1.18rem;
+                float:right;
+                padding-top: 0.1rem;
+                border-bottom: solid 1px #EEE;
+                padding-right: 0.15rem;
+                h3{
+                    color: #111;
+                    font-size: 0.14rem;
+                    font-weight: 500;
+                }
+                div{
+                    height: 0.5rem;
+                    margin-top: 0.2rem;
+                    span{
+                        color: #d22147;
+                        display: block;
+                        font-size: 0.16rem;
+                    }
+                    p{
+                        padding-top: 0.1rem;
+                        span{
+                           color: #999;
+                            font-size: 0.12rem;
+                            float:left;
+                            display: inline-block;
+                            margin-right: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mysj{
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    span{
+        color: #999;
+        font-size: 0.14rem;
+    }
+    p{
+        a{
+            color: red;
+            font-size: 0.16rem;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+body {
+  background: #fff; }
+
+.carousel div {
+  height: 3.52rem;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .carousel div img {
+    width: 3.52rem !important;
+    margin-left: 10px; }
+
+.msg {
+  width: 100%;
+  border-top: 0.01rem solid #E3E3E3;
+  height: 500px;
+  margin-top: 0.5rem; }
+  .msg h3 {
+    font-size: 0.16rem;
+    font-weight: 500;
+    margin: 0.1rem 0.15rem; }
+  .msg div {
+    margin-top: 0.25rem;
+    height: 0.93rem; }
+    .msg div ul {
+      margin: 0 0.15rem; }
+      .msg div ul li {
+        margin-top: 0.13rem; }
+      .msg div ul .price span {
+        color: #d22147;
+        font-size: 0.20rem;
+        margin-right: 1.8rem; }
+      .msg div ul .price i {
+        font-size: 0.12rem; }
+      .msg div ul .spm, .msg div ul .market {
+        font-size: 0.12rem;
+        color: #888; }
+      .msg div ul .market span {
+        text-decoration: line-through; }
+    .msg div .dj {
+      padding: 0 0.15rem;
+      border-bottom: solid 1px #EEE;
+      background: #f5f5f5;
+      height: 0.49rem;
+      line-height: 0.49rem;
+      margin-top: 0.1rem; }
+      .msg div .dj span {
+        border: 1px dashed #ec9b6d;
+        font-size: 0.13rem;
+        text-align: center;
+        border-radius: 0.04rem;
+        padding: 0.02rem 0.04rem !important;
+        color: #ec9b6d !important;
+        margin-right: 0.1rem; }
+      .msg div .dj p {
+        font-size: 0.13rem;
+        display: inline-block; }
+      .msg div .dj i {
+        font-size: 0.2rem;
+        color: #CCCCCC;
+        float: right; }
+    .msg div .dz {
+      margin-top: 0;
+      background: #fff; }
+      .msg div .dz span {
+        border: 0;
+        color: #888 !important;
+        font-size: 0.14rem; }
+      .msg div .dz p {
+        font-size: 0.16rem;
+        color: #333; }
+        .msg div .dz p span {
+          color: #ec9b6d !important;
+          margin-left: 0.15rem; }
+      .msg div .dz i {
+        font-size: 0.16rem !important; }
+    .msg div .cf p {
+      color: #777;
+      border: solid 1px #CCC;
+      font-size: 0.12rem !important;
+      display: inline-block;
+      height: 0.24rem;
+      line-height: 0.24rem; }
+      .msg div .cf p span {
+        margin-left: 0;
+        color: #333 !important; }

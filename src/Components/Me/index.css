@@ -1,0 +1,98 @@
+.me {
+  width: 100%;
+  margin-bottom: 1rem; }
+  .me .url {
+    height: 1.59rem;
+    background: url(../../images/head_bg.png) no-repeat;
+    background-size: 100%; }
+    .me .url i {
+      font-size: 0.4rem; }
+    .me .url a {
+      color: white; }
+    .me .url p {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 1rem;
+      height: 1rem;
+      border-radius: 100%;
+      text-align: center;
+      line-height: 1rem;
+      font-size: 0.15rem;
+      color: white; }
+  .me .box {
+    position: absolute;
+    left: 36%;
+    top: 5%;
+    text-align: center; }
+  .me .login-box {
+    width: 100%;
+    height: 0.69rem;
+    display: flex;
+    justify-content: space-around; }
+    .me .login-box span {
+      text-align: center;
+      padding: 0.1rem 0; }
+      .me .login-box span em {
+        font-weight: lighter;
+        font-size: 0.15rem;
+        color: #666;
+        line-height: 0.2rem; }
+      .me .login-box span p {
+        color: #666;
+        font-size: 0.14rem; }
+  .me .mg {
+    width: 100%;
+    height: 0.15rem;
+    background: #e3e3e3; }
+  .me .member {
+    padding: 0 0.1rem; }
+    .me .member .member-box {
+      line-height: 0.47rem;
+      height: 0.47rem;
+      border-bottom: solid 0.01rem #EEE; }
+      .me .member .member-box h3 {
+        float: left;
+        font-size: 0.16rem;
+        color: #111;
+        font-weight: 100; }
+      .me .member .member-box h5 {
+        float: right;
+        font-weight: 100;
+        color: #999; }
+      .me .member .member-box i {
+        float: right;
+        font-size: 0.3rem;
+        color: #999; }
+    .me .member ul {
+      display: flex;
+      justify-content: space-around;
+      text-align: center; }
+      .me .member ul li {
+        padding: 0.11rem 0 0.05rem 0; }
+        .me .member ul li p {
+          font-size: 0.14rem;
+          color: #666; }
+        .me .member ul li i {
+          font-size: 0.3rem; }
+  .me .pay {
+    padding: 0 0.1rem; }
+    .me .pay .pay-box {
+      line-height: 0.47rem;
+      height: 0.47rem;
+      border-bottom: solid 0.01rem #EEE; }
+      .me .pay .pay-box h3 {
+        float: left;
+        font-size: 0.16rem;
+        color: #111;
+        font-weight: 100; }
+      .me .pay .pay-box h5 {
+        float: right;
+        font-weight: 100;
+        color: #999; }
+      .me .pay .pay-box i {
+        float: right;
+        font-size: 0.3rem;
+        color: #999; }
+      .me .pay .pay-box em {
+        float: left;
+        font-size: 0.2rem;
+        margin-right: 0.1rem; }
