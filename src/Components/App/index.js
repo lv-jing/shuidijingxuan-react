@@ -8,7 +8,9 @@ class App extends Component {
       <div >
       	<Header/>
       	<Footerbar/>
-        {this.props.children}
+          <div className='react-home'>
+              {this.props.children}
+          </div>
       </div>
     );
   }

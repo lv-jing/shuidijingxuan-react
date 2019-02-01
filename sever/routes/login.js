@@ -15,6 +15,7 @@ router.post('/',function(req,res){
 		username: req.body.phone,
 		password: req.body.password
 	}, function(err, data) {
+	    console.log(data,333)
 		if(!err) {
 			if(data.length == 0) {
 				res.send(isrep);

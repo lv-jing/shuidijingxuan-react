@@ -152,7 +152,7 @@ class Register extends Component {
 		var str =this.refs.yzmvalue.value.split()
 		var yzm = this.state.yzm
 		console.log(str,yzm)
-		if(str!=yzm){	
+		if(str!==yzm){	
 			this.refs.yzmvalue.value = ""
 			this.setState({
 				str: "验证码不能为空或者验证码错误",

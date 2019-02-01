@@ -84,7 +84,7 @@ class Login extends Component {
 			console.log("验证失败")
 			this.refs.passwordValue.value=""
 			this.setState({
-				str:"密码不嫩为空或者密码格式错误",
+				str:"密码不能为空或者密码格式错误",
 				isShow:true
 			})
 			
@@ -96,7 +96,7 @@ class Login extends Component {
 		phone: this.refs.usersvalue.value,
 		password: this.refs.passwordValue.value
 	}).then((res) => {
-			console.log(res.data)
+			console.log(res,2222)
 			if(res.data===true){
 				this.setState({
 				isShow: false
