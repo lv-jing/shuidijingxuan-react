@@ -96,7 +96,6 @@ class Login extends Component {
 		phone: this.refs.usersvalue.value,
 		password: this.refs.passwordValue.value
 	}).then((res) => {
-			console.log(res,2222)
 			if(res.data===true){
 				this.setState({
 				isShow: false

@@ -141,7 +141,7 @@ class Register extends Component {
 			})
 		}else{
 			console.log("密码正确")
-			
+
 			this.setState({
 				isShow: false
 			})
@@ -152,16 +152,17 @@ class Register extends Component {
 		var str =this.refs.yzmvalue.value.split()
 		var yzm = this.state.yzm
 		console.log(str,yzm)
-		if(str!==yzm){	
-			this.refs.yzmvalue.value = ""
+		if(str[0]==yzm){
+			console.log("验证成功")
+			this.refs.yzmvalue.value = this.state.yzm
+			this.setState({
+				isShow: false
+			})
+		}else{
+			console.log("验证失败")
 			this.setState({
 				str: "验证码不能为空或者验证码错误",
 				isShow: true
-			})
-		}else{
-			console.log("验证成功")
-			this.setState({
-				isShow: false
 			})
 		}
 	}
@@ -171,19 +172,15 @@ class Register extends Component {
 		var str1 = this.refs.psvalue.value
 		var str2 = this.refs.pswdvalue.value
 		var str3 = this.refs.yzmvalue.value
-		
 		if(str!==""&&str1!==""&&str2!==""&&str3!==""){
-			
 			this.setState({
 				isShow: false
 			})
-			
 			axios.post("/register", {
 			phone: this.refs.namevalue.value,
 			pass: this.refs.psvalue.value
 			
 		}).then(res => {
-			
 			if(res.data === true) {
 				this.setState({
 					isShow: false

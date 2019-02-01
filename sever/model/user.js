@@ -8,5 +8,4 @@ var obj = {
 }
 
 var model = mongoose.model('user',new Schema(obj));
-
 module.exports = model;
