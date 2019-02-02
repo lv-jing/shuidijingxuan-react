@@ -19,7 +19,7 @@ class Lists extends Component{
 		console.log(a,999)
 		//判断是分类接口还是搜索接口
 		//https://www.bulaimei365.com//index.php?ctl=Goods_Goods&met=goodslist&typ=json&ua=wap&sub_site_id=0&cat_id=7&pagesize=10&curpage=1&firstRow=0&cat_id=7
-		axios.get(a == "2"?`https://www.bulaimei365.com//index.php?ctl=Goods_Goods&met=goodslist&typ=json&ua=wap&sub_site_id=0&cat_id=${this.props.match.params.id}&pagesize=10&curpage=1&firstRow=0&cat_id=${this.props.match.params.id}`:`https://www.bulaimei365.com//index.php?ctl=Goods_Goods&met=goodslist&typ=json&ua=wap&sub_site_id=0&keyword=${this.props.match.params.id}&pagesize=10&curpage=1&firstRow=0&keywords=${this.props.match.params.id}`).then(res=>{
+		axios.get(a === "2"?`https://www.bulaimei365.com//index.php?ctl=Goods_Goods&met=goodslist&typ=json&ua=wap&sub_site_id=0&cat_id=${this.props.match.params.id}&pagesize=10&curpage=1&firstRow=0&cat_id=${this.props.match.params.id}`:`https://www.bulaimei365.com//index.php?ctl=Goods_Goods&met=goodslist&typ=json&ua=wap&sub_site_id=0&keyword=${this.props.match.params.id}&pagesize=10&curpage=1&firstRow=0&keywords=${this.props.match.params.id}`).then(res=>{
 			this.setState({
 				lists:res.data.data.items
 			})

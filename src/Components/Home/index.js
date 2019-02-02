@@ -10,8 +10,10 @@ class Home extends Component {
         this.state = {
             looplist: [],
             looplist1: [],
+            looplist2: [],
             navlist: [],
             imageUrl1: "",
+            imageUrl2: "",
             goodslist: []
         }
     }
@@ -23,7 +25,7 @@ class Home extends Component {
 
     componentDidMount() {
         setTimeout(function () {
-            var mySwiper1 = new Swiper('#swiper1', {
+            new Swiper('#swiper1', {
                 slidesPerView: 3,
                 // 分页器
                 pagination: {
@@ -31,18 +33,22 @@ class Home extends Component {
                     type: 'fraction'
                 }
             })
-            var mySwiper2 = new Swiper('#swiper2', {
+           new Swiper('#swiper2', {
                 slidesPerView: 5,
             })
-            var mySwiper3 = new Swiper('#swiper3', {
+            new Swiper('#swiper3', {
                 loop: true,
-                autoplay: true,
+                autoplay: {
+                    delay: 3000,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: false,
+                },
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets'
                 }
             })
-            var mySwiper4 = new Swiper('#swiper4', {
+            new Swiper('#swiper4', {
                 slidesPerView: 3,
                 // 分页器
                 pagination: {
@@ -50,7 +56,14 @@ class Home extends Component {
                     type: 'fraction'
                 }
             })
-
+            new Swiper('#swiper5', {
+                slidesPerView: 3,
+                // 分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction'
+                }
+            })
         }, 500)
         //获取轮播图、商品推荐等数据
         axios.get("https://www.bulaimei365.com//index.php?ctl=Index&met=index&typ=json&ua=wap&sub_site_id=0&page=1")
@@ -64,11 +77,11 @@ class Home extends Component {
         axios.get("https://www.bulaimei365.com//index.php?ctl=Index&met=index&typ=json&ua=wap&sub_site_id=0&page=2")
             .then(res => {
                 var data = res.data.data.module_data;
-                console.log(data[1].goods.item, 8)
                 this.setState({
-                    looplist1: data[1].goods.item
+                    looplist1: data[1].goods.item,
+                    looplist2: data[3].goods.item,
+                    imageUrl2: data[2].home1.image
                 })
-                console.log(this.state.looplist1, 99)
             })
 
         axios.get("https://www.bulaimei365.com//index.php?ctl=Goods_Cat&met=cat&typ=json&cat_parent_id=0")
@@ -134,7 +147,7 @@ class Home extends Component {
                 </div>
 
                 {
-                    //热销商品信息
+                    //优选新品信息图片
                 }
                 <div className="swiper-container" id="swiper1">
                     <div className="swiper-wrapper">
@@ -156,6 +169,9 @@ class Home extends Component {
                 <div className="hot_sell cream">
                     <img src={this.state.imageUrl1} alt=""/>
                 </div>
+                {
+                    //热销商品信息列表
+                }
                 <div className="swiper-container" id="swiper4">
                     <div className="swiper-wrapper">
                         {
@@ -172,6 +188,35 @@ class Home extends Component {
                     </div>
                     <div className="swiper-pagination"></div>
                 </div>
+
+                <div className="hot_sell cream">
+                    <img src={this.state.imageUrl2} alt=""/>
+                </div>
+
+                <div className="swiper-container" id="swiper5">
+                    <div className="swiper-wrapper">
+                        {
+                            this.state.looplist2.map(item =>
+                                <div className="swiper-slide" key={item.goods_id}
+                                     onClick={this.click.bind(this, item.goods_id
+                                     )}>
+                                    <img src={item.goods_image} alt=""/>
+                                    <h5>{item.goods_name}</h5>
+                                    <p>￥{item.goods_promotion_price}</p>
+                                </div>
+                            )
+                        }
+                    </div>
+                    <div className="swiper-pagination"></div>
+                </div>
+
+
+
+
+
+
+
+
                 {/*<div className="swiper-container" id="swiper4">*/}
                     {/*<div className="swiper-wrapper">*/}
                     {/*</div>*/}

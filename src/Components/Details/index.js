@@ -35,7 +35,7 @@ class Details extends Component{
 			<Header/>
 			{
 				this.state.imglist.length?
-				<ReactSwipe className="carousel" swipeOptions={{continuous: false}}>
+				<ReactSwipe className="carousel" swipeOptions={{continuous: true,auto:3000}} key={this.state.imglist.length}>
 					{
 						this.state.imglist.map(item=>
 							<img src={item.images_image} key={item.images_id} alt=""/>

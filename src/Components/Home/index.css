@@ -180,3 +180,33 @@ body {
       font-size: 0.12rem;
       margin-top: 0.1rem;
       color: #d22147; }
+
+#swiper5 {
+  margin-top: 0.06rem;
+  margin-bottom: 0.1rem;
+  background: #fff;
+  text-align: center;
+  font-size: 0.15rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.14rem; }
+  #swiper5 .swiper-pagination-current {
+    color: red !important; }
+  #swiper5 .swiper-slide {
+    width: 33%; }
+    #swiper5 .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+    #swiper5 .swiper-slide h5 {
+      width: 94%;
+      margin: auto;
+      font-weight: 100;
+      height: 0.25rem;
+      overflow: hidden;
+      line-height: 0.125rem;
+      margin-top: 0.1rem;
+      font-size: 0.12rem;
+      color: #444; }
+    #swiper5 .swiper-slide p {
+      font-size: 0.12rem;
+      margin-top: 0.1rem;
+      color: #d22147; }

@@ -152,7 +152,7 @@ class Register extends Component {
 		var str =this.refs.yzmvalue.value.split()
 		var yzm = this.state.yzm
 		console.log(str,yzm)
-		if(str[0]==yzm){
+		if(str[0]===yzm){
 			console.log("验证成功")
 			this.refs.yzmvalue.value = this.state.yzm
 			this.setState({
