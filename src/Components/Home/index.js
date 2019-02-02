@@ -209,20 +209,6 @@ class Home extends Component {
                     </div>
                     <div className="swiper-pagination"></div>
                 </div>
-
-
-
-
-
-
-
-
-                {/*<div className="swiper-container" id="swiper4">*/}
-                    {/*<div className="swiper-wrapper">*/}
-                    {/*</div>*/}
-                    {/*<div className="swiper-scrollbar"></div>*/}
-                {/*</div>*/}
-
             </div>
 
         );
